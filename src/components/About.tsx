@@ -6,12 +6,14 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Senior Software Engineer with a BS in Computer Science, skilled in mobile
-          app development using React Native and Flutter, and experienced in
-          backend development with Strapi. I have worked on AI-powered
-          applications, API integrations, and published multiple apps on the Apple
-          App Store. With strong foundations in logic building, OOP, data structures,
-          and databases, I enjoy creating impactful, user-focused solutions.
+          Software Engineer specializing in cross-platform mobile development
+          using React Native and Flutter, with strong experience in building
+          scalable, production-ready applications. Expert in AI-powered features
+          including chatbots, voice interaction, and real-time systems. Promoted
+          twice within a short time to Senior Software Engineer, demonstrating
+          strong ownership and technical impact. Published multiple live
+          applications on the Apple App Store with focus on performance, clean
+          architecture, and user-centric design.
         </p>
       </div>
     </div>
