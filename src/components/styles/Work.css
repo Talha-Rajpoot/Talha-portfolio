@@ -33,6 +33,8 @@
   backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
+  content-visibility: auto;
+  contain-intrinsic-size: 0 800px;
 }
 
 .featured-project::before {
@@ -134,13 +136,13 @@
   border: 1px solid #2a2a2a;
   border-radius: 12px;
   padding: 20px;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  will-change: transform;
 }
 
 .feature-card:hover {
   border-color: rgba(94, 234, 212, 0.3);
-  background: rgba(94, 234, 212, 0.04);
-  transform: translateY(-2px);
+  transform: translateY(-2px) translateZ(0);
 }
 
 .feature-card h5 {
@@ -172,6 +174,9 @@
   padding: 20px 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  will-change: scroll-position;
+  transform: translateZ(0);
 }
 
 .gallery-scroll::-webkit-scrollbar {
@@ -183,10 +188,12 @@
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.3s ease;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .gallery-item:hover {
-  transform: scale(1.03);
+  transform: scale(1.03) translateZ(0);
 }
 
 .gallery-item img {
@@ -194,6 +201,7 @@
   width: auto;
   display: block;
   border-radius: 16px;
+  content-visibility: auto;
 }
 
 .gallery-arrow {

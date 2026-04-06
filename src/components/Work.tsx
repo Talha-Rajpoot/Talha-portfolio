@@ -32,12 +32,12 @@ const projects: Project[] = [
     screens: [
       `${base}images/dietapp-onboarding.webp`,
       `${base}images/dietapp-home.webp`,
-      `${base}images/dietapp-feed.png`,
-      `${base}images/dietapp-scanner.png`,
+      `${base}images/dietapp-feed.jpg`,
+      `${base}images/dietapp-scanner.jpg`,
       `${base}images/dietapp-asset66.webp`,
       `${base}images/dietapp-nutrition.webp`,
-      `${base}images/dietapp-grocery.png`,
-      `${base}images/dietapp-instacart.png`,
+      `${base}images/dietapp-grocery.jpg`,
+      `${base}images/dietapp-instacart.jpg`,
       `${base}images/dietapp-streak.webp`,
       `${base}images/dietapp-fitness.webp`,
       `${base}images/dietapp-activity.webp`,
@@ -178,7 +178,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
           <div className="gallery-scroll" ref={galleryRef}>
             {project.screens.map((src, i) => (
               <div className="gallery-item" key={i}>
-                <img src={src} alt={`${project.title} screen ${i + 1}`} />
+                <img src={src} alt={`${project.title} screen ${i + 1}`} loading="lazy" decoding="async" />
               </div>
             ))}
           </div>
@@ -192,7 +192,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
         </div>
       ) : (
         <div className="single-image-wrapper">
-          <img src={project.screens[0]} alt={project.title} />
+          <img src={project.screens[0]} alt={project.title} loading="lazy" decoding="async" />
         </div>
       )}
     </div>
