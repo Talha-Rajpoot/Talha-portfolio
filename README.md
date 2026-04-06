@@ -1,15 +1,36 @@
-# My Portfolio Wesbite - Overview 🚀
+# Muhammad Asim Altaf - Portfolio
 
-This repository contains the open source version of my porfolio website.
-Do check it out!
+Personal portfolio website showcasing my work as a **Senior Software Engineer** specializing in cross-platform mobile development.
 
-## Instructions 🛠️
+## About Me
 
-I have modified the gsap club plugins with the trial plugins, but with the trial plugin you cannot host it🔴. So for Club plugins, Check out here: https://gsap.com/docs/v3/Installation/
+Software Engineer at **Metaviz Pro, Lahore** with expertise in React Native, Flutter, and AI-powered mobile applications. Promoted twice to Senior Software Engineer. Published multiple live apps on the Apple App Store and Google Play Store.
 
-**Techstack** - React, TypeScript, GSAP, ThreeJS, WebGL, HTML, Css, JavaScript
+## Featured Projects
 
-![Portfolio-Preview](public/images/preview.png)
+- **Diet App** - AI-based nutrition & fitness platform (Flutter, Dart, AI APIs, Instacart)
+- **The Toolbox** - AI business automation platform (React Native, Strapi, GoHighLevel CRM)
+- **MishwarUAE** - Tourism & travel app (React Native, Location APIs, Secure Payments)
+- **Customer Hub** - AI-powered customer engagement (React Native, Strapi, DigitalOcean)
+
+## Tech Stack
+
+**Portfolio:** React, TypeScript, GSAP, Three.js, WebGL, Vite
+
+**Skills:** Flutter, Dart, React Native, JavaScript, TypeScript, Strapi, CI/CD, Firebase, REST APIs, AI Chatbots, Git
+
+## Setup
+
+```bash
+npm install
+npm run dev
+```
+
+## Contact
+
+- Email: asimaltaf037@gmail.com
+- LinkedIn: [muhammad-asim-altaf](https://www.linkedin.com/in/muhammad-asim-altaf-084054288/)
+- GitHub: [ItxAsim](https://github.com/ItxAsim)
 
 ## License
 
