@@ -401,3 +401,24 @@ h2.landing-info-h2 {
     font-size: 75px;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .landing-intro h1 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .landing-intro h2 {
+    font-size: 18px;
+  }
+  .landing-info h3 {
+    font-size: 18px;
+  }
+  .landing-info h2 {
+    font-size: 26px;
+    line-height: 32px;
+    margin-left: 14px;
+  }
+  h2.landing-info-h2 {
+    font-size: 34px;
+  }
+}

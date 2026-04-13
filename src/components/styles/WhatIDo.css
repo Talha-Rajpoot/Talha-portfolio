@@ -384,6 +384,21 @@
     max-width: calc(100% - 25px);
     margin: 0;
   }
+  .what-content {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .what-content h3 {
+    font-size: 20px;
+  }
+  .what-content h4 {
+    font-size: 14px;
+  }
+  .what-box h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
 }
 @media only screen and (min-width: 1950px) {
   .what-box h2 {

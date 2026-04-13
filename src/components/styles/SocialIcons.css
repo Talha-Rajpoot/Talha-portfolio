@@ -101,3 +101,19 @@ div.resume-button span {
     margin-top: -1.5px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .resume-button {
+    transform: none;
+    bottom: 20px;
+    right: 0;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 2px;
+  }
+  div.resume-button span {
+    font-size: 15px;
+  }
+  .check-line {
+    display: none;
+  }
+}

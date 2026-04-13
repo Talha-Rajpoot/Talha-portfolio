@@ -11,16 +11,17 @@ export let smoother: ScrollSmoother;
 
 const Navbar = () => {
   useEffect(() => {
+    const isMobile = window.innerWidth < 768;
     smoother = ScrollSmoother.create({
       wrapper: "#smooth-wrapper",
       content: "#smooth-content",
-      smooth: 2.5,
-      speed: 1.2,
-      smoothTouch: 0.15,
+      smooth: isMobile ? 1 : 2.5,
+      speed: isMobile ? 1 : 1.2,
+      smoothTouch: 0.1,
       effects: true,
       autoResize: true,
       ignoreMobileResize: true,
-      normalizeScroll: true,
+      normalizeScroll: !isMobile,
     });
 
     smoother.scrollTop(0);

@@ -329,3 +329,92 @@
     max-height: 200px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .work-section h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .featured-project {
+    padding: 20px 16px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+  }
+
+  .featured-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+
+  .featured-title-row h3 {
+    font-size: 22px;
+  }
+
+  .featured-link {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+
+  .featured-category {
+    font-size: 13px;
+  }
+
+  .featured-desc {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 14px;
+  }
+
+  .tech-tag {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+
+  .featured-tech {
+    margin-top: 16px;
+    gap: 6px;
+  }
+
+  .featured-features {
+    margin-top: 24px;
+    gap: 8px;
+  }
+
+  .feature-card {
+    padding: 12px;
+  }
+
+  .feature-card h5 {
+    font-size: 13px;
+  }
+
+  .feature-card p {
+    font-size: 12px;
+  }
+
+  .gallery-wrapper {
+    margin-top: 24px;
+  }
+
+  .gallery-item img {
+    height: 380px;
+    border-radius: 12px;
+  }
+
+  .gallery-scroll {
+    gap: 10px;
+    padding: 14px 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .gallery-item img {
+    height: 320px;
+  }
+
+  .featured-title-row h3 {
+    font-size: 20px;
+  }
+}
