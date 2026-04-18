@@ -76,8 +76,21 @@ export function initialFX() {
   var landingText4 = new SplitText(".landing-h2-1", TextProps);
   var landingText5 = new SplitText(".landing-h2-2", TextProps);
 
-  LoopText(landingText2, landingText3);
-  LoopText(landingText4, landingText5);
+  const loopTimelines = [
+    LoopText(landingText2, landingText3),
+    LoopText(landingText4, landingText5),
+  ];
+
+  const landingEl = document.querySelector(".landing-section");
+  if (landingEl && "IntersectionObserver" in window) {
+    const io = new IntersectionObserver(([entry]) => {
+      loopTimelines.forEach((tl) => {
+        if (entry.isIntersecting) tl.play();
+        else tl.pause();
+      });
+    });
+    io.observe(landingEl);
+  }
 }
 
 function LoopText(Text1: SplitText, Text2: SplitText) {
@@ -133,4 +146,5 @@ function LoopText(Text1: SplitText, Text2: SplitText) {
       },
       1
     );
+  return tl;
 }

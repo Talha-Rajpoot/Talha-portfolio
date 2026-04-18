@@ -91,19 +91,19 @@ const WhatIDo = () => {
               <h4>Cross-Platform Mobile Apps</h4>
               <p>
                 Building high-quality mobile applications for iOS and Android
-                using React Native and Flutter. Published multiple apps on
-                App Store and Play Store.
+                using Flutter and React Native. Delivered multiple production
+                apps on the Play Store from concept to deployment.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">React Native</div>
                 <div className="what-tags">Flutter</div>
+                <div className="what-tags">React Native</div>
                 <div className="what-tags">Dart</div>
                 <div className="what-tags">TypeScript</div>
                 <div className="what-tags">JavaScript</div>
                 <div className="what-tags">Firebase</div>
                 <div className="what-tags">Xcode</div>
-                <div className="what-tags">AI Chatbots</div>
+                <div className="what-tags">Android Studio</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -128,20 +128,21 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
             <div className="what-content-in">
               <h3>BACKEND & APIs</h3>
-              <h4>Custom APIs & Integrations</h4>
+              <h4>Scalable Server-Side Solutions</h4>
               <p>
-                Building and managing custom APIs with Strapi, ensuring secure
-                authentication, structured data models, and seamless integration
-                with mobile apps and third-party services.
+                Designing and building secure, scalable backend systems with
+                Node.js and Python FastAPI — including REST APIs, database
+                design, authentication, and third-party service integrations.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
+                <div className="what-tags">Node.js</div>
+                <div className="what-tags">Python FastAPI</div>
                 <div className="what-tags">Strapi</div>
                 <div className="what-tags">REST APIs</div>
+                <div className="what-tags">PostgreSQL</div>
                 <div className="what-tags">Firebase</div>
-                <div className="what-tags">CI/CD</div>
                 <div className="what-tags">Git</div>
-                <div className="what-tags">AI Chatbots</div>
               </div>
               <div className="what-arrow"></div>
             </div>

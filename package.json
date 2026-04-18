@@ -1,5 +1,5 @@
 {
-  "name": "rajesh-portfolio",
+  "name": "talha-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,11 +7,12 @@
     "dev": "vite --host",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build && cp dist/index.html dist/404.html",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
-    "@react-three/cannon": "^6.6.0",
     "@react-three/drei": "^9.120.4",
     "@react-three/fiber": "^8.17.10",
     "@react-three/postprocessing": "^2.16.3",
@@ -37,6 +38,7 @@
     "globals": "^15.9.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "gh-pages": "^6.3.0"
   }
 }

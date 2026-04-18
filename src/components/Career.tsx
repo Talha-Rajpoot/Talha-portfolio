@@ -15,55 +15,30 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Senior Software Engineer</h4>
-                <h5>Metaviz Pro, Lahore</h5>
+                <h4>Mobile App Developer</h4>
+                <h5>Metaviz Pro</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Leading cross-platform mobile app development using React Native
-              & Flutter. Designing scalable architecture, integrating AI-powered
-              systems, and managing end-to-end deployment of production apps.
+              Building cross-platform mobile applications end-to-end using
+              Flutter and React Native, backed by scalable Node.js and Python
+              FastAPI services. Delivering polished, production-ready apps
+              from concept to App Store and Play Store deployment.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Software Engineer</h4>
-                <h5>Metaviz Pro, Lahore</h5>
-              </div>
-              <h3>MAY 2025</h3>
-            </div>
-            <p>
-              Built production-level mobile features and real-time systems.
-              Integrated Firebase services, RESTful APIs, and third-party
-              services with seamless frontend-backend communication.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Associate Software Engineer</h4>
-                <h5>Metaviz Pro, Lahore</h5>
-              </div>
-              <h3>SEP 2024</h3>
-            </div>
-            <p>
-              Developed UI components and core application features. Assisted
-              in API integration, debugging, and improved app stability.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>BS in Computer Science</h4>
-                <h5>University of Gujrat</h5>
+                <h4>BS in Information Technology</h4>
+                <h5>PUCIT</h5>
               </div>
               <h3>2020-2024</h3>
             </div>
             <p>
-              Completed Bachelor of Science in Computer Science with strong
-              foundations in logic building, OOP, data structures, and databases.
+              Completed Bachelor of Science in Information Technology with
+              strong foundations in software engineering, data structures,
+              databases, and modern application development.
             </p>
           </div>
         </div>

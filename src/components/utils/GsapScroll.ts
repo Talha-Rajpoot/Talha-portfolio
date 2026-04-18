@@ -18,7 +18,7 @@ export function setCharTimeline(
       trigger: ".landing-section",
       start: "top top",
       end: "bottom top",
-      scrub: 1.5,
+      scrub: 0.5,
       invalidateOnRefresh: true,
       fastScrollEnd: true,
     },
@@ -28,7 +28,7 @@ export function setCharTimeline(
       trigger: ".about-section",
       start: "center 55%",
       end: "bottom top",
-      scrub: 1.5,
+      scrub: 0.5,
       invalidateOnRefresh: true,
       fastScrollEnd: true,
     },
@@ -38,7 +38,7 @@ export function setCharTimeline(
       trigger: ".whatIDO",
       start: "top top",
       end: "bottom top",
-      scrub: 1.5,
+      scrub: 0.5,
       invalidateOnRefresh: true,
       fastScrollEnd: true,
     },
@@ -59,11 +59,19 @@ export function setCharTimeline(
       object.material.transparent = true;
       object.material.opacity = 0;
       object.material.emissive.set("#B0F5EA");
-      gsap.timeline({ repeat: -1, repeatRefresh: true }).to(object.material, {
+      const flickerTl = gsap.timeline({ repeat: -1, repeatRefresh: true }).to(object.material, {
         emissiveIntensity: () => intensity * 8,
         duration: () => Math.random() * 0.6,
         delay: () => Math.random() * 0.1,
       });
+      const landingEl = document.querySelector(".landing-section");
+      if (landingEl && "IntersectionObserver" in window) {
+        const io = new IntersectionObserver(([entry]) => {
+          if (entry.isIntersecting) flickerTl.play();
+          else flickerTl.pause();
+        });
+        io.observe(landingEl);
+      }
       screenLight = object;
     }
   });
@@ -145,7 +153,7 @@ export function setAllTimeline() {
       trigger: ".career-section",
       start: "top 30%",
       end: "100% center",
-      scrub: 1.5,
+      scrub: 0.5,
       invalidateOnRefresh: true,
       fastScrollEnd: true,
     },

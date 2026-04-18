@@ -17,106 +17,89 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "RPPA App",
+    category: "Real-Time Directory & Community Platform",
+    desc: "A comprehensive mobile application built with Flutter featuring real-time data management, user authentication, and a seamless cross-platform experience integrated with a Brilliant Directory backend and Firebase.",
+    tech: ["Flutter", "Brilliant Directory", "Firebase"],
+    features: [
+      { title: "Real-Time Data", desc: "Live sync with Firebase backend" },
+      { title: "Secure Auth", desc: "Robust user authentication flow" },
+      { title: "Push Notifications", desc: "Engage users with timely alerts" },
+      { title: "Cross-Platform UI", desc: "Polished iOS & Android experience" },
+      { title: "Directory Listings", desc: "Rich Brilliant Directory integration" },
+      { title: "Firebase Sync", desc: "Offline support & cloud storage" },
+    ],
+    screens: [`${base}images/rppa.png`],
+    link: "https://play.google.com/store/apps/details?id=com.app.rppa&hl=en",
+    linkLabel: "Play Store",
+  },
+  {
+    title: "ICore Career Hub",
+    category: "Career & Job Matching Platform",
+    desc: "A career management platform connecting job seekers with opportunities. Built with React Native and powered by a Strapi + PostgreSQL backend, featuring profile building, job matching, and application tracking.",
+    tech: ["React Native", "Strapi", "PostgreSQL"],
+    features: [
+      { title: "Job Matching", desc: "Smart role recommendations" },
+      { title: "Profile Builder", desc: "Rich candidate profiles" },
+      { title: "Application Tracker", desc: "Monitor every application" },
+      { title: "Strapi CMS", desc: "Dynamic content management" },
+      { title: "Secure Auth", desc: "Token-based user sessions" },
+      { title: "Push Alerts", desc: "Real-time job notifications" },
+    ],
+    screens: [`${base}images/icore.png`],
+    link: "https://play.google.com/store/apps/details?id=com.icorecareerhub&hl=en",
+    linkLabel: "Play Store",
+  },
+  {
     title: "Diet App",
-    category: "AI-Based Nutrition & Fitness Platform",
-    desc: "An AI-powered mobile application built with Flutter & Dart focused on simplifying diet planning, calorie tracking, and healthy lifestyle management. Features intelligent meal planning, food recognition scanning, and Instacart integration for seamless ingredient ordering.",
-    tech: ["Flutter", "Dart", "AI APIs", "Instacart", "Adapty", "Firebase"],
+    category: "Health & Nutrition Tracking",
+    desc: "A health and nutrition tracking app with personalized meal plans, calorie counter, progress monitoring, and dietary recommendations. Built with Flutter & Dart on a Strapi backend.",
+    tech: ["Flutter", "Dart", "Strapi"],
     features: [
-      { title: "AI Meal Planning", desc: "Smart calorie & nutrition recommendations" },
-      { title: "Food Recognition", desc: "Scan food to extract nutritional data" },
-      { title: "Social Feed", desc: "Short-video content with engagement" },
-      { title: "Instacart Integration", desc: "Order ingredients seamlessly" },
-      { title: "Fasting Tracker", desc: "Meal progress & user analytics" },
-      { title: "Streak System", desc: "Daily motivation & commitment" },
+      { title: "Meal Planning", desc: "Personalized daily meal plans" },
+      { title: "Calorie Counter", desc: "Track intake with precision" },
+      { title: "Progress Tracker", desc: "Monitor your health journey" },
+      { title: "Diet Recommendations", desc: "Tailored dietary guidance" },
+      { title: "Food Logs", desc: "Quick, structured food entries" },
+      { title: "Strapi Content", desc: "Dynamic recipes & articles" },
     ],
-    screens: [
-      `${base}images/dietapp-onboarding.webp`,
-      `${base}images/dietapp-home.webp`,
-      `${base}images/dietapp-feed.jpg`,
-      `${base}images/dietapp-scanner.jpg`,
-      `${base}images/dietapp-asset66.webp`,
-      `${base}images/dietapp-nutrition.webp`,
-      `${base}images/dietapp-grocery.jpg`,
-      `${base}images/dietapp-instacart.jpg`,
-      `${base}images/dietapp-streak.webp`,
-      `${base}images/dietapp-fitness.webp`,
-      `${base}images/dietapp-activity.webp`,
-      `${base}images/dietapp-measurement.webp`,
-      `${base}images/dietapp-meal.webp`,
-      `${base}images/dietapp-hero.webp`,
-      `${base}images/dietapp-succeed.webp`,
-      `${base}images/dietapp-asset69.webp`,
-    ],
-    link: "https://metavizai.com/case-study/nutrition-first-fitness-assistant-with-meal-planning-daily-progress-intelligence/",
-    linkLabel: "Case Study",
+    screens: [`${base}images/dietapp.png`],
+    link: "https://play.google.com/store/apps/details?id=com.biotin.diet_app&hl=en",
+    linkLabel: "Play Store",
   },
   {
-    title: "The Toolbox",
-    category: "AI Business Automation Platform",
-    desc: "An AI-powered platform for trade business owners to streamline operations, automate marketing, and manage customer relationships with tools for booking, lead tracking, CRM, and industry insights.",
-    tech: ["React Native", "Strapi.js", "GoHighLevel CRM", "AI APIs", "Firebase"],
+    title: "Africa Travel Hub",
+    category: "Travel & Tourism Platform",
+    desc: "A travel companion app for exploring Africa with destination guides, booking integration, itinerary planning, and local experiences. Flutter frontend powered by a Python FastAPI backend.",
+    tech: ["Flutter", "Python", "FastAPI"],
     features: [
-      { title: "AI Chatbot", desc: "Intelligent business assistant" },
-      { title: "Lead Management", desc: "Track & convert leads with analytics" },
-      { title: "Blog & Content", desc: "Dynamic content management via Strapi" },
-      { title: "Performance Reports", desc: "Revenue & conversion insights" },
-      { title: "Shop & E-Commerce", desc: "Branding content marketplace" },
-      { title: "Subscription Plans", desc: "Tiered business packages" },
+      { title: "Destination Guides", desc: "Rich travel content & tips" },
+      { title: "Itinerary Planner", desc: "Plan trips day-by-day" },
+      { title: "Booking Integration", desc: "Seamless reservations" },
+      { title: "Local Experiences", desc: "Discover authentic adventures" },
+      { title: "FastAPI Backend", desc: "Lightning-fast Python APIs" },
+      { title: "Multi-Region Support", desc: "Cover every corner of Africa" },
     ],
-    screens: [
-      `${base}images/toolbox-3.webp`,
-      `${base}images/toolbox-1.webp`,
-      `${base}images/toolbox-2.webp`,
-      `${base}images/toolbox-4.webp`,
-    ],
-    link: "https://apps.apple.com/pk/app/the-toolbox/id6740332347",
-    linkLabel: "App Store",
+    screens: [`${base}images/africa.png`],
+    link: "https://africatravelhub.com/login",
+    linkLabel: "Website",
   },
   {
-    title: "MishwarUAE",
-    category: "Tourism & Travel App",
-    desc: "An inbound tourism mobile app designed to help residents and visitors explore the UAE with seamless navigation, personalized recommendations, secure bookings, rewards system, and integrated store.",
-    tech: ["React Native", "Location APIs", "Secure Payments", "Firebase"],
+    title: "Hit Local Hub",
+    category: "Local Business Discovery",
+    desc: "A local business discovery platform connecting users with nearby services, reviews, deals, and community engagement. Built with Flutter on a FastAPI backend with Brilliant Directory integration.",
+    tech: ["Flutter", "FastAPI", "Brilliant Directory"],
     features: [
-      { title: "Tour Discovery", desc: "Explore attractions & landmarks" },
-      { title: "Secure Payments", desc: "Visa, Mastercard & more" },
-      { title: "Rewards System", desc: "Earn points, win prizes" },
-      { title: "In-App Store", desc: "Travel gear & accessories" },
-      { title: "Multi-Language", desc: "Arabic & English support" },
-      { title: "Social Login", desc: "Google & Facebook auth" },
+      { title: "Business Discovery", desc: "Find nearby services fast" },
+      { title: "Ratings & Reviews", desc: "Trusted community feedback" },
+      { title: "Local Deals", desc: "Exclusive offers & promotions" },
+      { title: "Geo Search", desc: "Location-based results" },
+      { title: "FastAPI Backend", desc: "Scalable Python services" },
+      { title: "Community Features", desc: "Engage with local users" },
     ],
-    screens: [
-      `${base}images/mishwar-12.webp`,
-      `${base}images/mishwar-13.webp`,
-      `${base}images/mishwar-1.webp`,
-      `${base}images/mishwar-2.webp`,
-      `${base}images/mishwar-3.webp`,
-      `${base}images/mishwar-4.webp`,
-      `${base}images/mishwar-7.webp`,
-      `${base}images/mishwar-8.webp`,
-      `${base}images/mishwar-9.webp`,
-      `${base}images/mishwar-10.webp`,
-      `${base}images/mishwar-11.webp`,
-    ],
-    link: "https://apps.apple.com/pk/app/mishwaruae/id6449493036",
-    linkLabel: "App Store",
-  },
-  {
-    title: "Customer Hub",
-    category: "AI-Powered Customer Engagement",
-    desc: "A cross-platform mobile app built to enhance customer interaction and support through AI-driven chat, real-time notifications, multi-tenant business management, and intuitive UX.",
-    tech: ["React Native", "Strapi", "DigitalOcean", "Firebase"],
-    features: [
-      { title: "AI Chat", desc: "Smart replies & session history" },
-      { title: "Real-Time Notifications", desc: "Visual indicators for quick response" },
-      { title: "Multi-Tenant", desc: "Manage customers per business" },
-      { title: "Feedback System", desc: "Capture & analyze user input" },
-    ],
-    screens: [
-      `${base}images/customerhub-icon.jpg`,
-    ],
-    link: "https://apps.apple.com/pk/app/the-customer-hub/id6741159778",
-    linkLabel: "App Store",
+    screens: [`${base}images/hitlocal.png`],
+    link: "https://www.hitlocalhub.com.au/",
+    linkLabel: "Website",
   },
 ];
 
@@ -178,7 +161,14 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
           <div className="gallery-scroll" ref={galleryRef}>
             {project.screens.map((src, i) => (
               <div className="gallery-item" key={i}>
-                <img src={src} alt={`${project.title} screen ${i + 1}`} loading="lazy" decoding="async" />
+                <img
+                  src={src}
+                  alt={`${project.title} screen ${i + 1}`}
+                  loading="lazy"
+                  decoding="async"
+                  width={1080}
+                  height={1920}
+                />
               </div>
             ))}
           </div>
@@ -192,7 +182,14 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
         </div>
       ) : (
         <div className="single-image-wrapper">
-          <img src={project.screens[0]} alt={project.title} loading="lazy" decoding="async" />
+          <img
+            src={project.screens[0]}
+            alt={project.title}
+            loading="lazy"
+            decoding="async"
+            width={1080}
+            height={1920}
+          />
         </div>
       )}
     </div>

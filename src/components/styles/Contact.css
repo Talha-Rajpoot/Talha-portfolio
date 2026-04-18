@@ -5,6 +5,8 @@
   position: relative;
   z-index: 2;
   background-color: var(--backgroundColor);
+  content-visibility: auto;
+  contain-intrinsic-size: auto 80vh;
 }
 
 .contact-section h3 {

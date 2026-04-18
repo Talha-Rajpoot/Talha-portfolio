@@ -15,7 +15,7 @@ const Navbar = () => {
     smoother = ScrollSmoother.create({
       wrapper: "#smooth-wrapper",
       content: "#smooth-content",
-      smooth: isMobile ? 1 : 2.5,
+      smooth: isMobile ? 0.6 : 1.2,
       speed: isMobile ? 1 : 1.2,
       smoothTouch: 0.1,
       effects: true,
@@ -39,22 +39,33 @@ const Navbar = () => {
         }
       });
     });
-    window.addEventListener("resize", () => {
-      ScrollSmoother.refresh(true);
-    });
+
+    let refreshTimer: ReturnType<typeof setTimeout>;
+    const onResize = () => {
+      clearTimeout(refreshTimer);
+      refreshTimer = setTimeout(() => ScrollSmoother.refresh(true), 150);
+    };
+    window.addEventListener("resize", onResize);
+
+    ScrollTrigger.refresh();
+
+    return () => {
+      clearTimeout(refreshTimer);
+      window.removeEventListener("resize", onResize);
+    };
   }, []);
   return (
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          MA
+          MT
         </a>
         <a
-          href="mailto:asimaltaf037@gmail.com"
+          href="mailto:muhammadtalha0708@gmail.com"
           className="navbar-connect"
           data-cursor="disable"
         >
-          asimaltaf037@gmail.com
+          muhammadtalha0708@gmail.com
         </a>
         <ul>
           <li>

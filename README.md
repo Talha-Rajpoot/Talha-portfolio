@@ -1,23 +1,24 @@
-# Muhammad Asim Altaf - Portfolio
+# Muhammad Talha - Portfolio
 
-Personal portfolio website showcasing my work as a **Senior Software Engineer** specializing in cross-platform mobile development.
+Personal portfolio website showcasing my work as a **Full Stack Mobile App Developer** specializing in cross-platform mobile development and scalable backend systems.
 
 ## About Me
 
-Software Engineer at **Metaviz Pro, Lahore** with expertise in React Native, Flutter, and AI-powered mobile applications. Promoted twice to Senior Software Engineer. Published multiple live apps on the Apple App Store and Google Play Store.
+Mobile App Developer at **Metaviz Pro** with expertise in Flutter, React Native, Node.js, and Python FastAPI. Delivered multiple production apps from concept to deployment on the Google Play Store.
 
 ## Featured Projects
 
-- **Diet App** - AI-based nutrition & fitness platform (Flutter, Dart, AI APIs, Instacart)
-- **The Toolbox** - AI business automation platform (React Native, Strapi, GoHighLevel CRM)
-- **MishwarUAE** - Tourism & travel app (React Native, Location APIs, Secure Payments)
-- **Customer Hub** - AI-powered customer engagement (React Native, Strapi, DigitalOcean)
+- **RPPA App** - Real-time directory & community platform (Flutter, Brilliant Directory, Firebase)
+- **ICore Career Hub** - Career & job matching platform (React Native, Strapi, PostgreSQL)
+- **Diet App** - Health & nutrition tracking (Flutter, Dart, Strapi)
+- **Africa Travel Hub** - Travel & tourism platform (Flutter, Python, FastAPI)
+- **Hit Local Hub** - Local business discovery (Flutter, FastAPI, Brilliant Directory)
 
 ## Tech Stack
 
 **Portfolio:** React, TypeScript, GSAP, Three.js, WebGL, Vite
 
-**Skills:** Flutter, Dart, React Native, JavaScript, TypeScript, Strapi, CI/CD, Firebase, REST APIs, AI Chatbots, Git
+**Skills:** Flutter, Dart, React Native, Node.js, Python FastAPI, JavaScript, TypeScript, Strapi, PostgreSQL, Firebase, REST APIs, Git
 
 ## Setup
 
@@ -28,9 +29,10 @@ npm run dev
 
 ## Contact
 
-- Email: asimaltaf037@gmail.com
-- LinkedIn: [muhammad-asim-altaf](https://www.linkedin.com/in/muhammad-asim-altaf-084054288/)
-- GitHub: [ItxAsim](https://github.com/ItxAsim)
+- Email: muhammadtalha0708@gmail.com
+- LinkedIn: [muhammad-talha](https://www.linkedin.com/in/muhammad-talha-082184278)
+- GitHub: [Talha-Rajpoot](https://github.com/Talha-Rajpoot)
+- Facebook: [Muhammad Talha](https://www.facebook.com/share/17pkSvd9sm/)
 
 ## License
 

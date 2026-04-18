@@ -23,9 +23,15 @@ const MainContainer = ({ children }: PropsWithChildren) => {
       setIsDesktopView(window.innerWidth > 1024);
     };
     resizeHandler();
-    window.addEventListener("resize", resizeHandler);
+    let resizeTimer: ReturnType<typeof setTimeout>;
+    const debouncedResize = () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(resizeHandler, 150);
+    };
+    window.addEventListener("resize", debouncedResize);
     return () => {
-      window.removeEventListener("resize", resizeHandler);
+      clearTimeout(resizeTimer);
+      window.removeEventListener("resize", debouncedResize);
     };
   }, [isDesktopView]);
 

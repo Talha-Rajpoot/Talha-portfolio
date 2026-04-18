@@ -7,25 +7,27 @@ const setLighting = (scene: THREE.Scene) => {
   directionalLight.intensity = 0;
   directionalLight.position.set(-0.47, -0.32, -1);
   directionalLight.castShadow = true;
-  directionalLight.shadow.mapSize.width = 1024;
-  directionalLight.shadow.mapSize.height = 1024;
+  directionalLight.shadow.mapSize.width = 512;
+  directionalLight.shadow.mapSize.height = 512;
   directionalLight.shadow.camera.near = 0.5;
   directionalLight.shadow.camera.far = 50;
+  directionalLight.shadow.bias = -0.0005;
   scene.add(directionalLight);
 
   const pointLight = new THREE.PointLight(0x22d3ee, 0, 100, 3);
   pointLight.position.set(3, 12, 4);
-  pointLight.castShadow = true;
   scene.add(pointLight);
 
-  new RGBELoader()
-    .setPath(`${import.meta.env.BASE_URL}models/`)
-    .load("char_enviorment.hdr?v=2", function (texture) {
-      texture.mapping = THREE.EquirectangularReflectionMapping;
-      scene.environment = texture;
-      scene.environmentIntensity = 0;
-      scene.environmentRotation.set(5.76, 85.85, 1);
-    });
+  if (window.innerWidth > 1024) {
+    new RGBELoader()
+      .setPath(`${import.meta.env.BASE_URL}models/`)
+      .load("char_enviorment.hdr?v=2", function (texture) {
+        texture.mapping = THREE.EquirectangularReflectionMapping;
+        scene.environment = texture;
+        scene.environmentIntensity = 0;
+        scene.environmentRotation.set(5.76, 85.85, 1);
+      });
+  }
 
   function setPointLight(screenLight: any) {
     if (screenLight.material.opacity > 0.9) {

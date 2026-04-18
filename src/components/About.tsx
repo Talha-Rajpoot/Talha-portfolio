@@ -6,14 +6,15 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Software Engineer specializing in cross-platform mobile development
-          using React Native and Flutter, with strong experience in building
-          scalable, production-ready applications. Expert in AI-powered features
-          including chatbots, voice interaction, and real-time systems. Promoted
-          twice within a short time to Senior Software Engineer, demonstrating
-          strong ownership and technical impact. Published multiple live
-          applications on the Apple App Store with focus on performance, clean
-          architecture, and user-centric design.
+          Passionate Full Stack Mobile App Developer with 2 years of hands-on
+          experience building high-quality, cross-platform applications.
+          Specialized in crafting seamless user experiences with Flutter and
+          React Native on the frontend, backed by robust server-side solutions
+          using Node.js and Python FastAPI. I've developed and delivered
+          multiple apps from concept to deployment, working across the full
+          development lifecycle. I thrive on turning ideas into polished,
+          production-ready products and I'm always eager to learn new
+          technologies and take on challenging projects.
         </p>
       </div>
     </div>

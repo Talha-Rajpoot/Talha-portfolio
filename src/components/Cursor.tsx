@@ -5,6 +5,7 @@ import gsap from "gsap";
 const Cursor = () => {
   const cursorRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
+    if (window.matchMedia("(pointer: coarse)").matches) return;
     let hover = false;
     const cursor = cursorRef.current!;
     const mousePos = { x: 0, y: 0 };
@@ -12,16 +13,21 @@ const Cursor = () => {
     document.addEventListener("mousemove", (e) => {
       mousePos.x = e.clientX;
       mousePos.y = e.clientY;
-    });
-    requestAnimationFrame(function loop() {
+    }, { passive: true });
+    let rafId = 0;
+    const loop = () => {
       if (!hover) {
-        const delay = 6;
-        cursorPos.x += (mousePos.x - cursorPos.x) / delay;
-        cursorPos.y += (mousePos.y - cursorPos.y) / delay;
-        cursor.style.transform = `translate3d(${cursorPos.x}px, ${cursorPos.y}px, 0)`;
+        const dx = mousePos.x - cursorPos.x;
+        const dy = mousePos.y - cursorPos.y;
+        if (Math.abs(dx) > 0.1 || Math.abs(dy) > 0.1) {
+          cursorPos.x += dx / 6;
+          cursorPos.y += dy / 6;
+          cursor.style.transform = `translate3d(${cursorPos.x}px, ${cursorPos.y}px, 0)`;
+        }
       }
-      requestAnimationFrame(loop);
-    });
+      rafId = requestAnimationFrame(loop);
+    };
+    rafId = requestAnimationFrame(loop);
     document.querySelectorAll("[data-cursor]").forEach((item) => {
       const element = item as HTMLElement;
       element.addEventListener("mouseover", (e: MouseEvent) => {
@@ -45,6 +51,7 @@ const Cursor = () => {
         hover = false;
       });
     });
+    return () => cancelAnimationFrame(rafId);
   }, []);
 
   return <div className="cursor-main" ref={cursorRef}></div>;
